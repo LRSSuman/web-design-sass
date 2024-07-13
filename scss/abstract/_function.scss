@@ -1,0 +1,6 @@
+@use '../abstract/variable' as var;
+
+// function used to get color from variable file using map
+@function theme-colors($color: 'primary') {
+    @return map-get(var.$theme-colors, $color);
+}
