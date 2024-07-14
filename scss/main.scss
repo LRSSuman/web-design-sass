@@ -4,9 +4,15 @@
 
 // utils
 @use './utils/animations';
+@use './utils/spacing';
 
 // Components
 @use './components/buttons';
+@use './components/badges';
 
 // layouts
 @use './layouts/header';
+@use './layouts/background_elements';
+
+// pages
+@use './pages/home';

@@ -1,0 +1,22 @@
+.hero-area {
+    padding: 8rem 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__contents {
+        max-width: 34rem;
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    &__desc {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: gray;
+    }
+}
