@@ -1,0 +1,27 @@
+@use '../abstract/function' as func;
+
+.about-area {
+    padding: 8rem 20rem;
+    margin-top: 11rem;
+    background: func.theme-colors('primary');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--img {
+        width: 32rem;
+    }
+
+    &--contents {
+        color: #fff;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            line-height: 2;
+            color: #cfcfcf;
+        }
+    }
+}

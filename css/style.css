@@ -888,4 +888,26 @@ a {
   color: gray;
 }
 
+.about-area {
+  padding: 8rem 20rem;
+  margin-top: 11rem;
+  background: #3f43fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-area--img {
+  width: 32rem;
+}
+.about-area--contents {
+  color: #fff;
+}
+.about-area--contents h2 {
+  font-size: 3rem;
+}
+.about-area--contents p {
+  line-height: 2;
+  color: #cfcfcf;
+}
+
 /*# sourceMappingURL=style.css.map */
