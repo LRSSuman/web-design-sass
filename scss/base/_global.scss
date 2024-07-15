@@ -14,3 +14,15 @@
     border-radius: 30px;
     margin: 1.8rem auto;
 }
+
+.resize-x {
+    resize: horizontal;
+}
+
+.resize-y {
+    resize: vertical;
+}
+
+.resize-none {
+    resize: none;
+}

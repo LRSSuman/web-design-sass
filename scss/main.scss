@@ -9,6 +9,7 @@
 // Components
 @use './components/buttons';
 @use './components/badges';
+@use './components/forms';
 
 // layouts
 @use './layouts/header';
@@ -19,3 +20,4 @@
 @use './pages/about';
 @use './pages/roadmap';
 @use './pages/courses';
+@use './pages/contact';
