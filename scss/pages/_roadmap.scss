@@ -1,7 +1,12 @@
 @use '../abstract/function' as func;
+@use '../abstract/mixins' as mixins;
 
 .roadmap {
     padding: 8rem 20rem;
+
+    @include mixins.responsive(xs) {
+        padding: 4rem 2rem;
+    }
 
     &--heading {
         text-align: center;
@@ -20,6 +25,10 @@
         justify-content: center;
         align-items: center;
         margin-top: 3rem;
+
+        @include mixins.responsive(xs) {
+            flex-direction: column;
+        }
     }
 
     &--item {
@@ -30,6 +39,10 @@
         filter: grayscale(100%);
         transition: 0.5s;
         margin-left: 3rem;
+
+        @include mixins.responsive(xs) {
+            margin-left: 0;
+        }
 
         &:hover &__img::after {
             animation: rotate-infinite 4s linear infinite;
@@ -86,6 +99,14 @@
             z-index: 1;
             line-height: 1;
             transition: 0.5s;
+
+            @include mixins.responsive(xs) {
+                content: '';
+                font-size: 1.5rem;
+                font-weight: bold;
+                top: 90%;
+                left: 40%;
+            }
         }
 
         &:hover:not(:last-child)::before {
@@ -104,6 +125,12 @@
             color: #020702;
             z-index: 1;
             line-height: 1;
+
+            @include mixins.responsive(xs) {
+                top: 90%;
+                right: 40%;
+                font-size: 1.5rem;
+            }
         }
 
         &:hover h5 {
