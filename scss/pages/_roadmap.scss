@@ -12,6 +12,10 @@
         padding: 4rem 2rem;
     }
 
+    @include mixins.responsive(lg) {
+        padding: 8rem 4rem;
+    }
+
     &--heading {
         text-align: center;
 
@@ -37,6 +41,10 @@
         @include mixins.responsive(sm) {
             flex-direction: column;
         }
+
+        @include mixins.responsive(lg) {
+            flex-direction: row;
+        }
     }
 
     &--item {
@@ -54,6 +62,11 @@
 
         @include mixins.responsive(sm) {
             margin-left: 0;
+        }
+
+        @include mixins.responsive(lg) {
+            max-width: 600px;
+            padding: 0;
         }
 
         &:hover &__img::after {
@@ -89,11 +102,19 @@
             h5 {
                 font-size: 1.5rem;
                 font-weight: 600;
+
+                @include mixins.responsive(lg) {
+                    font-size: 1rem;
+                }
             }
 
             p {
                 color: gray;
                 line-height: 1.5;
+
+                @include mixins.responsive(lg) {
+                    font-size: 0.9rem;
+                }
             }
         }
 
@@ -127,6 +148,13 @@
                 top: 90%;
                 left: 40%;
             }
+
+            @include mixins.responsive(lg) {
+                content: '';
+                top: 35%;
+                left: auto;
+                right: -30%;
+            }
         }
 
         &:hover:not(:last-child)::before {
@@ -155,6 +183,11 @@
                 top: 90%;
                 right: 40%;
                 font-size: 1.5rem;
+            }
+
+            @include mixins.responsive(lg) {
+                top: 100%;
+                left: -20%;
             }
         }
 
